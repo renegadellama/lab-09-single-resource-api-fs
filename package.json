@@ -1,0 +1,35 @@
+{
+  "name": "lab-09-single-resource-api-fs",
+  "version": "1.0.0",
+  "description": "![cf](https://i.imgur.com/7v5ASc8.png) lab-09-single-resource-api (SIMPLE PERSISTENCE)\r ======",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "server": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renegadellama/lab-09-single-resource-api-fs.git"
+  },
+  "author": "Isak Swearingen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/renegadellama/lab-09-single-resource-api-fs/issues"
+  },
+  "homepage": "https://github.com/renegadellama/lab-09-single-resource-api-fs#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.3.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "morgan": "^1.8.1",
+    "uuid": "^3.0.1"
+  }
+}
