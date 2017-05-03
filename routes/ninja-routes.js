@@ -34,6 +34,7 @@ module.exports = function(router) {
       let ninja = new Ninja(req.body.name, req.body.clan, req.body.weapons)
       storage.createItem('ninja', ninja)
       .then(newNinja => {
+        console.log(newNinja);
         res.writeHead(200, {'Content-Type': 'application/json'})
         res.write(JSON.stringify(newNinja))
         res.end()
