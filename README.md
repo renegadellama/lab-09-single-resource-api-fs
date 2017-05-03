@@ -1,29 +1,12 @@
-![cf](https://i.imgur.com/7v5ASc8.png) lab-09-single-resource-api (SIMPLE PERSISTENCE)
-======
+READ ME
 
-# To Submit this Assignment
-  * fork this repository
-  * write all of your code in a directory named `lab-` + `<your name>` **e.g.** `lab-duncan`
-    * please write the code from lab-08 to this new directory (make a copy as a starting point)
-    * it's in your best interests to retype it as practice
-  * push to your repository
-  * submit a pull request to this repository
-  * submit a link to your PR in canvas
-  * write a question and observation on canvas
-
-# Resources
-Here are some npm modules that you may find useful for this project, it is not required for you to use them.  
-* [del](https://github.com/sindresorhus/del) - a npm module that makes deleting files easy
-* [mkdirp](https://github.com/substack/node-mkdirp) - like `mkdir -p` but Node.js
-
-# Directions
-* make these directories to organize your code
- * lib
- * test
- * model
- * route
- * data // to hold your resources
-* refactor the **storage** module to have file system persistence
-
-## Bonus
-* **2pts** - have the **storage** module check for the type sub-directory, and create it if it does not exist
+This is a single resource API which allows you to create different types of ninjas.
+Using the POST method in a program like Postman, you can create a new instance of a ninja
+by assigning it properties of name, clan, and weapons. Make sure the keys and properties are all contained
+within quotes.  
+Example: {"name": "Frank", "clan": "Foot", "weapons": "Swords"}
+After posting, your ninja will be assigned a unique id.  This id can access you ninja by entering /api/ninja?id="yourid".
+Using the GET method, you can recall your ninja using the id.
+Using the DELETE method, you can delete your ninja's information.
+Using PUT, you can overwrite the attributes of your ninja while keeping your unique ID.  Do this following the format of the above example.
+All instances of ninjas are created with unique id's in the data folder.  
